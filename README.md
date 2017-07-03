@@ -1,7 +1,8 @@
 # string-template-parser
 C# string template parser, gets a string as a first input parameter , and the second parameter receive an object (anonymous), contains the [field] listed on first parameter string template.
 
-# A simple use case for this tempate parser, is build email template, from string, and object contains fields values.
+# User as an email template:
+A simple use case for this tempate parser, is build email template, from string, and object contains fields values.
 
 # Test cases
 # 1- simple match fields
