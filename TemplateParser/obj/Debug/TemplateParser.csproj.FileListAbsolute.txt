@@ -1,0 +1,5 @@
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser\bin\Debug\TemplateParser.dll
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser\bin\Debug\TemplateParser.pdb
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser\obj\Debug\TemplateParser.csprojResolveAssemblyReference.cache
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser\obj\Debug\TemplateParser.dll
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser\obj\Debug\TemplateParser.pdb

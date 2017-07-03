@@ -1,0 +1,8 @@
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser.Test\bin\Debug\TemplateParser.Test.exe
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser.Test\bin\Debug\TemplateParser.Test.pdb
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser.Test\bin\Debug\TemplateParser.dll
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser.Test\bin\Debug\TemplateParser.pdb
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser.Test\obj\Debug\TemplateParser.Test.csprojResolveAssemblyReference.cache
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser.Test\obj\Debug\TemplateParser.Test.exe
+C:\Users\abdo\Downloads\TemplateParser\TemplateParser.Test\obj\Debug\TemplateParser.Test.pdb
