@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace StringTemplateParser.Test
@@ -21,10 +21,10 @@ namespace StringTemplateParser.Test
             TemplateEngine engine = this.CreateEngine();
             var dataSource = new
             {
-                Name = "John"
+                Name = "Mohamed"
             };
             string output = engine.Apply("Hello [Name]", dataSource);
-            Assert.AreEqual("Hello John", output);
+            Assert.AreEqual("Hello Mohamed", output);
         }
 
         /// <summary>
@@ -38,12 +38,12 @@ namespace StringTemplateParser.Test
             {
                 Contact = new
                 {
-                    FirstName = "John",
-                    LastName = "Smith"
+                    FirstName = "Mohamed",
+                    LastName = "Abdo"
                 }
             };
             string output = engine.Apply("Hello [Contact.FirstName] [Contact.LastName]", dataSource);
-            Assert.AreEqual("Hello John Smith", output);
+            Assert.AreEqual("Hello Mohamed Abdo", output);
         }
 
         /// <summary>
@@ -57,17 +57,17 @@ namespace StringTemplateParser.Test
             {
                 Contact = new
                 {
-                    FirstName = "John",
-                    LastName = "Smith",
+                    FirstName = "Mohamed",
+                    LastName = "Abdo",
                     Organisation = new
                     {
-                        Name = "Acme Ltd",
-                        City = "Auckland"
+                        Name = "Soft-Ideas Ltd",
+                        City = "Cairo"
                     }
                 }
             };
             string output = engine.Apply(@"[with Contact]Hello [FirstName] from [with Organisation][Name] in [City][/with][/with]", dataSource);
-            Assert.AreEqual("Hello John from Acme Ltd in Auckland", output);
+            Assert.AreEqual("Hello Mohamed from Soft-Ideas Ltd in Cairo", output);
         }
 
         /// <summary>
@@ -79,10 +79,10 @@ namespace StringTemplateParser.Test
             TemplateEngine engine = this.CreateEngine();
             var dataSource = new
             {
-                Name = "John"
+                Name = "Mohamed"
             };
             string output = engine.Apply(@"Hello [InvalidProperty1] [InvalidProperty2] [Name]", dataSource);
-            Assert.AreEqual("Hello   John", output);
+            Assert.AreEqual("Hello   Mohamed", output);
         }
 
         /// <summary>
@@ -94,7 +94,7 @@ namespace StringTemplateParser.Test
             TemplateEngine engine = this.CreateEngine();
             var dataSource = new
             {
-                Name = "John"
+                Name = "Mohamed"
             };
             string output = engine.Apply("Hello there", dataSource);
             Assert.AreEqual("Hello there", output);
@@ -124,10 +124,10 @@ namespace StringTemplateParser.Test
             TemplateEngine engine = this.CreateEngine();
             var dataSource = new
             {
-                Name = "John"
+                Name = "Mohamed"
             };
             string output = engine.Apply("Hello [Name \"d MMMM yyyy\"]", dataSource);
-            Assert.AreEqual("Hello John", output);
+            Assert.AreEqual("Hello Mohamed", output);
         }
     }
 }
