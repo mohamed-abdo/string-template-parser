@@ -38,12 +38,6 @@ namespace StringTemplateParser
             var engine = new TemplateRegexMatcher(RegexHelper.VALID_DOT_TEMPLATE, new char[] { '[', ']' });
             //applying transformer for special cases handling, as plugin over the functionality, instead on touching core engine.
             template = engine.ApplyTransformars(template,
-                (templateWithToday) =>
-                {   //today transformer
-                    const string todayPattern = "\\[Today \\\"d MMMM yyyy\\\"\\]";
-                    const string todayReplacement = "1 December 1990";
-                    return new Regex(todayPattern).Replace(templateWithToday, todayReplacement);
-                },
                 (templateWithdateFromat) =>
                 {
                     //remove unsuportted format
